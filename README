@@ -1,0 +1,62 @@
+The simple menu is a javascript API to quickly create dynamic horizontal menus.
+
+Quick Setup:
+--------------------------------------------------------------------------------
+1) copy simple_menu.js and simple_menu.css into a folder on your web server. The
+   files should be accessible to the pages that will show the menu.
+
+2) create a javascript file to build the menu. It should look something like
+   this:
+
+   function load_menu()
+   {
+     var menu   = com.choltz.ui.menu();
+     var parent = menu.add_menu_item("Home", "/home");
+     parent.add_child("Menu Item 1", "/item1");
+     parent.add_child("Menu Item 2", "/item2");
+     parent.add_child("Menu Item 3", "/item3");
+
+     parent = menu.add_menu_item("About", "/about");
+     parent.add_child("Menu Item 4", "/item4");
+   }
+
+   The add_menu_item and add_child functions expect these two parameters:
+     
+     text: This is text displayd in the menu item
+     url:  This is the URL the menu item will redirect to when clicked
+ 
+3) load the libraries and your menu definition file in each page where the menu
+   will be visible. Add something like this to the <head> section of your page:
+
+     <script type="text/javascript" src="simple_menu.js"></script>
+     <script type="text/javascript" src="simple_menu_definition.js"></script>
+     <link rel="stylesheet" type="text/css"  href="simple_menu.css"/>
+
+4) Load the menu on page load. Because the menu structure was defined in a
+   function, it won't load unless we tell the page to do so. Add the load_menu
+   function to the onload attribute of the body:
+
+   <body onload="load_menu()" >
+
+   or register the function with the page's onload event:
+
+//?    window.addEventListener("mousedown", this.onGeckoMouse(), true);
+
+Styles
+--------------------------------------------------------------------------------
+By default, the menu will not likely match the look and feel of your web site.
+The look and feel of the menu can be changed to fit your site by adding CSS
+class definitions to a custom file that you include in the web page. This
+document assumes you have at least passing familiarity with cascading style
+sheets.
+
+
+
+
+
+
+
+1) Create a new CSS file that is visible to the web pages that will display
+   the menu.
+
+2) 
