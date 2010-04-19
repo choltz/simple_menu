@@ -38,9 +38,7 @@ Quick Setup:
 
    <body onload="load_menu()" >
 
-   or register the function with the page's onload event:
-
-*** in progresss
+   Or register the function with the page's load event handler.
 
 Styles
 --------------------------------------------------------------------------------
@@ -50,13 +48,31 @@ class definitions to a custom file that you include in the web page. This
 document assumes you have at least passing familiarity with cascading style
 sheets.
 
+  Nomenclature:
+  The menu is divided into several components, each of which has associated
+  css class names:
+
+  The top-level menu is called the menu bar
+  -------------------------------------------------------------
+  |   menu_bar_link   |   menu_bar_link   |   menu_bar_link   |
+  -------------------------------------------------------------
+  |                           |
+  |    menu_cell_link         |
+  |___________________________|
+  |                           |
+  |    menu_cell_link         |
+  |___________________________|
+  |                           |
+  |    menu_cell_link         |
+  |___________________________|
 
 
-*** in progress
-
-
+  Manipulation of these three CSS classes allow you to change the color, font,
+  hover, etc. attributes of the menu. See simple_menu_custom.css for examples.
 
 1) Create a new CSS file that is visible to the web pages that will display
    the menu.
 
-2) 
+2) Add custom CSS classes to the file to control the look and feel of the menu.
+   Take a look at simple_menu_custom.css for ways to customize the menu.
+
