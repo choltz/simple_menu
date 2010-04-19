@@ -40,7 +40,7 @@ Quick Setup:
 
    or register the function with the page's onload event:
 
-//?    window.addEventListener("mousedown", this.onGeckoMouse(), true);
+*** in progresss
 
 Styles
 --------------------------------------------------------------------------------
@@ -52,7 +52,7 @@ sheets.
 
 
 
-
+*** in progress
 
 
 
