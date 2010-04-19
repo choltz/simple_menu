@@ -1,0 +1,52 @@
+/*
+  example file that demonstrates ways to customize the look and feel of the simple
+  menu. Uncomment sections to see how they affect example.html
+*/
+
+/* *** Thin border on bottom of the main menu bar and around drop-downs
+.menu_bar
+{
+  border-bottom: solid 1px #999;
+}
+
+.menu_dropdown
+{
+  border: solid 1px #999;
+  border-top: none;
+}
+*/
+
+/* *** Dashed separator between each item in the drop-down menus
+.menu_cell_link
+{
+  border-bottom: dashed 1px #bbb;
+}
+*/
+
+/* *** Change color of items in the drop-down menus on mouse-over
+.menu_cell_link:hover
+{
+  background-color: white;
+}
+*/
+
+
+/* *** Apply transparency to the drop-down menus
+.menu_dropdown
+{
+  background-color: rgba(255,255,255,.5);
+}
+
+.menu_cell_link
+{
+  background-color: rgba(255,255,255,.5);
+}
+*/
+
+/* *** Crazy red dotted hover border over all menu items
+.menu_link:hover
+{
+  border: dashed 2px red;
+  padding: 3px;
+}
+*/
